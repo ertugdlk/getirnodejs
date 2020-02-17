@@ -2,9 +2,9 @@
   "name": "getir",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node server.js",
     "test": "NODE_ENV=test jest --testTimeout=10000 --detectOpenHandles "
   },
   "author": "ertugdilek",

@@ -4,16 +4,7 @@
     <list default="true" id="fd7f3d2f-9016-4cfc-b979-1bb22ac57399" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai-http/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/chai-http/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chai/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/chai/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mocha/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mocha/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/modelTest.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +81,9 @@
       <workItem from="1581860149494" duration="8564000" />
       <workItem from="1581878032429" duration="1438000" />
       <workItem from="1581926838567" duration="13614000" />
-      <workItem from="1581947111109" duration="4215000" />
+      <workItem from="1581947111109" duration="4463000" />
+      <workItem from="1581957893521" duration="1521000" />
+      <workItem from="1581959839164" duration="472000" />
     </task>
     <servers />
   </component>
