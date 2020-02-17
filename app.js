@@ -17,16 +17,19 @@ var db = mongoose.connection;
 //setup server port
 var port = process.env.PORT || 5000;
 
-//launch app specified port
-app.listen(port, function () {
-    console.log("running rest api on port " + port);
-});
-app.get( '/' , (req,res) => res.send('You can reach API endpoint list from '+ port + '/api'));
-
 //route settings
 let routes = require("./route");
 app.use('/api' , routes);
 
+//launch app specified port
+app.listen(port, function () {
+    console.log("running rest api on port " + port);
+});
+
+app.get( '/' , (req,res) => res.send('You can reach API endpoint list from /api'));
+
+
+module.exports = app;
 
 
 

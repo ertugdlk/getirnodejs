@@ -1,5 +1,6 @@
 let router = require('express').Router();
 
+//main page route settings
 router.get('/', function (req, res) {
     res.json({
         status: 'api working',
@@ -9,6 +10,7 @@ router.get('/', function (req, res) {
 
 var controller = require('./controller.js');
 
+//route settings for /records
 router.route('/records')
     .get(controller.index)
     .post(controller.filter);
