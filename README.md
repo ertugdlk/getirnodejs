@@ -1,5 +1,5 @@
 # Getir Assignment
-This is a RESTful API with a single endpoint that fetches the data in the provided MongoDB collection and return the results in the requested format.
+This is a RESTful API with a single endpoint that fetches the data in the provided MongoDB collection and return the results in the requested format. The code written in Node.js using express framework with Mongoose. Unit tests written with Jest library.
 
 ## Run Project
 Installing packages 
