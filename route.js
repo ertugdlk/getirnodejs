@@ -8,7 +8,7 @@ router.get('/', function (req, res) {
     });
 });
 
-var controller = require('./controller.js');
+var controller = require('./controller/controller.js');
 
 //route settings for /records
 router.route('/records')

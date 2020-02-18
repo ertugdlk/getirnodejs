@@ -16,9 +16,10 @@ var recordSchema = mongoose.Schema({
     counts: Array,
 });
 
+//model
 var Record = module.exports = mongoose.model('record', recordSchema);
 
-//get with post params . adding field for totalcount also checking filters
+//Get records with POST params adding field for totalcount also checking filters
 module.exports.get = function (params, callback, limit) {
     try {
         var minVal = parseInt(params.minCount);
@@ -26,7 +27,7 @@ module.exports.get = function (params, callback, limit) {
         var startDate = params.startDate;
         var endDate = params.endDate;
 
-
+        //totalCount param settings $match
         var valueParam = {};
         if (_.isNaN(minVal)) {
             valueParam["$gte"] = Number.MIN_SAFE_INTEGER;
@@ -40,6 +41,7 @@ module.exports.get = function (params, callback, limit) {
             valueParam["$lte"] = maxVal;
         }
 
+        //between dates param settings $match
         var dateParam = {};
         if (!_.isUndefined(startDate)) {
             dateParam["$gte"] = new Date(startDate);
@@ -53,6 +55,7 @@ module.exports.get = function (params, callback, limit) {
             limit = Number.MAX_SAFE_INTEGER;
         }
 
+        //matchParams initialized before because empty param does not return data
         var matchParams = {};
         if(!_.isEmpty(valueParam )) {
             matchParams['totalCount'] = valueParam;
@@ -62,6 +65,7 @@ module.exports.get = function (params, callback, limit) {
         }
 
         limit = Number.MAX_SAFE_INTEGER;
+        //filter records by matchParams , also counts[] added by new field totalCount which is sum of count values
         Record.aggregate(
             [
                 {
